@@ -5,6 +5,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { environment } from '../environments/environment';
 import { GraphQLModule } from '@nestjs/graphql';
 import { AppResolver } from './app.resolver';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -15,9 +16,9 @@ import { AppResolver } from './app.resolver';
       typePaths: ['./**/*.graphql'],
       context: ({ req }) => ({ req }),
     }),
+    AuthModule,
   ],
   controllers: [AppController],
   providers: [AppResolver],
 })
-export class AppModule {
-}
+export class AppModule {}
