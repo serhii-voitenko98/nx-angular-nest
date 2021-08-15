@@ -36,7 +36,7 @@
     "frontend-client": {
       "tags": ["scope:frontend-client", "type:app"]
     },
-    "frontend-client-e2e": {
+    "frontend/client-e2e": {
       "tags": [],
       "implicitDependencies": ["frontend-client"]
     },
