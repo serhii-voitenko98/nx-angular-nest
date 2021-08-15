@@ -5,7 +5,7 @@
  *
  * provides an User entity interface
  */
-export interface IUsers {
+export interface IUser {
   /**
    * User's ID
    */
@@ -52,5 +52,5 @@ export interface IUsers {
    *
    * If present used as public username
    */
-  nickname: string;
+  nickname?: string;
 }

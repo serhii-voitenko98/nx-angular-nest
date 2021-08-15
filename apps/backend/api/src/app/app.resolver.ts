@@ -1,9 +1,5 @@
-import { Resolver, Query } from '@nestjs/graphql';
+import { Resolver } from '@nestjs/graphql';
 
 @Resolver('app')
 export class AppResolver {
-  @Query('test')
-  async getData() {
-    return 'GraphQL response';
-  }
 }
