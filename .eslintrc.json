@@ -14,7 +14,7 @@
             "depConstraints": [
               {
                 "sourceTag": "scope:frontend-client",
-                "onlyDependOnLibsWithTags": ["scope:frontend-client"]
+                "onlyDependOnLibsWithTags": ["scope:frontend-client", "type:lib"]
               },
               {
                 "sourceTag": "scope:frontend-admin",
