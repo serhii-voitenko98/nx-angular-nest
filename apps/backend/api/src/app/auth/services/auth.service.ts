@@ -4,6 +4,11 @@ import { ISignAuthPayload, ISignAuthResponse } from '@nx-angular-nest/shared/dat
 @Injectable()
 export class AuthService {
   login(signAuthPayload: ISignAuthPayload): Promise<ISignAuthResponse> {
-    return;
+    return
+    // {
+    //   accessToken: // JWT
+    //   expiresIn: // JWT
+    //   id: // user service
+    // };
   }
 }
