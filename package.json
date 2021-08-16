@@ -19,7 +19,7 @@
     "backend-api:migrations:run": "node_modules/.bin/tsc --project apps/backend/api/tsconfig.migrations.json && node_modules/.bin/ts-node node_modules/.bin/typeorm migration:run -t=false",
     "backend-api:migrations:revert": "node_modules/.bin/ts-node node_modules/.bin/typeorm migration:revert",
     "backend-api:migration:create": "node_modules/.bin/ts-node node_modules/.bin/typeorm migration:create -n",
-    "db:start": "cp .env ./docker-compose && cd docker-compose && docker-compose up -d",
+    "db:start": "cp .env ./docker-compose && cd docker-compose && docker-compose -p nx-angular-nest up -d",
     "db:stop": "cd docker-compose && docker-compose stop && rm .env",
     "lint": "nx workspace-lint && ng lint",
     "e2e": "ng e2e",
