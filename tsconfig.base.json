@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@nx-angular-nest/shared/data-access/interfaces": [
+        "libs/shared/data-access/interfaces/src/index.ts"
+      ],
       "@nx-angular-nest/ui-component": ["libs/ui-component/src/index.ts"]
     }
   },
