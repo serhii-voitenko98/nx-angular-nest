@@ -8,12 +8,12 @@ export default {
   synchronize: true,
   logging: true,
   entities: [
-    'dist/apps/backend/api/src/**/*.entity{.ts, .js}', // where to find entities files after running backend:api:entities script
+    'dist/apps/backend/api/src/**/*.entity.js', // where to find entities files after running backend:api:entities script
   ],
   migrations: [
-    'dist/apps/backend/api/src/migrations/*{.ts, .js}', // where to find migrations files after running backend:api:migrations:run script
+    'dist/apps/backend/api/src/migrations/*.js', // where to find migrations files after running backend:api:migrations:run script
   ],
   cli: {
-    'migrationsDir': 'migrations', // where to put files after running backend:api:migration:create script
+    'migrationsDir': 'apps/backend/api/src/migrations', // where to put files after running backend:api:migration:create script
   },
 };
