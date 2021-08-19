@@ -258,9 +258,7 @@
             "main": "apps/frontend/client/server.ts",
             "tsConfig": "apps/frontend/client/tsconfig.server.json",
             "stylePreprocessorOptions": {
-              "includePaths": [
-                "apps/frontend/client/src/styles"
-              ]
+              "includePaths": ["apps/frontend/client/src/styles"]
             },
             "inlineStyleLanguage": "scss"
           },
@@ -299,9 +297,7 @@
         "prerender": {
           "builder": "@nguniversal/builders:prerender",
           "options": {
-            "routes": [
-              "/"
-            ]
+            "routes": ["/"]
           },
           "configurations": {
             "production": {
@@ -314,6 +310,31 @@
             }
           },
           "defaultConfiguration": "production"
+        }
+      }
+    },
+    "frontend-client-data-access-store": {
+      "projectType": "library",
+      "root": "libs/frontend-client/data-access/store",
+      "sourceRoot": "libs/frontend-client/data-access/store/src",
+      "prefix": "nx-angular-nest",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/frontend-client/data-access/store"],
+          "options": {
+            "jestConfig": "libs/frontend-client/data-access/store/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/frontend-client/data-access/store/src/**/*.ts",
+              "libs/frontend-client/data-access/store/src/**/*.html"
+            ]
+          }
         }
       }
     },
