@@ -36,6 +36,9 @@
     "frontend-client": {
       "tags": ["scope:frontend-client", "type:app"]
     },
+    "frontend-shared-data-access-root-store": {
+      "tags": ["type:lib", "scope:frontend-client", "lib-type:data-access"]
+    },
     "frontend/admin-e2e": {
       "tags": [],
       "implicitDependencies": ["frontend-admin"]
