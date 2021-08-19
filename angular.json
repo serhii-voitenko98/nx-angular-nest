@@ -313,17 +313,17 @@
         }
       }
     },
-    "frontend-client-data-access-store": {
+    "frontend-shared-data-access-root-store": {
       "projectType": "library",
-      "root": "libs/frontend-client/data-access/store",
-      "sourceRoot": "libs/frontend-client/data-access/store/src",
+      "root": "libs/frontend/shared/data-access/root-store",
+      "sourceRoot": "libs/frontend/shared/data-access/root-store/src",
       "prefix": "nx-angular-nest",
       "architect": {
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/frontend-client/data-access/store"],
+          "outputs": ["coverage/libs/frontend/shared/data-access/root-store"],
           "options": {
-            "jestConfig": "libs/frontend-client/data-access/store/jest.config.js",
+            "jestConfig": "libs/frontend/shared/data-access/root-store/jest.config.js",
             "passWithNoTests": true
           }
         },
@@ -331,8 +331,8 @@
           "builder": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": [
-              "libs/frontend-client/data-access/store/src/**/*.ts",
-              "libs/frontend-client/data-access/store/src/**/*.html"
+              "libs/frontend/shared/data-access/root-store/src/**/*.ts",
+              "libs/frontend/shared/data-access/root-store/src/**/*.html"
             ]
           }
         }

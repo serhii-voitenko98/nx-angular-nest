@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Store } from '@ngrx/store';
 
 @Component({
   selector: 'nx-angular-nest-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'frontend-client';
+
+  constructor(private readonly store: Store) {
+    console.log(this.store);
+  }
 }

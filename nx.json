@@ -36,6 +36,9 @@
     "frontend-client": {
       "tags": ["scope:frontend-client", "type:app"]
     },
+    "frontend-shared-data-access-root-store": {
+      "tags": ["type:lib", "scope:frontend-client", "lib-type:data-access"]
+    },
     "frontend/admin-e2e": {
       "tags": [],
       "implicitDependencies": ["frontend-admin"]
@@ -43,9 +46,6 @@
     "frontend/client-e2e": {
       "tags": [],
       "implicitDependencies": ["frontend-client"]
-    },
-    "frontend-client-data-access-store": {
-      "tags": ["type:lib", "scope:frontend-client", "lib-type:data-access"]
     },
     "shared-data-access-interfaces": {
       "tags": ["type:lib", "scope:shared", "lib-type:data-access"]

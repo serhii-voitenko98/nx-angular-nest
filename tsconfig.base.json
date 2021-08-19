@@ -16,8 +16,8 @@
     "strictNullChecks": false,
     "baseUrl": ".",
     "paths": {
-      "@nx-angular-nest/frontend-client/data-access/store": [
-        "libs/frontend-client/data-access/store/src/index.ts"
+      "@nx-angular-nest/frontend-shared-data-access-root-store": [
+        "libs/frontend/shared/data-access/root-store/src/index.ts"
       ],
       "@nx-angular-nest/shared/data-access/interfaces": [
         "libs/shared/data-access/interfaces/src/index.ts"
